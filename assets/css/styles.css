@@ -5852,7 +5852,7 @@ button.close {
 @media (min-width: 768px) {
   .navbar {
     position: fixed;
-    top: 0; }
+    top: 5%; }
   .mastfoot {
     position: fixed;
     bottom: 10%; }
@@ -5903,8 +5903,7 @@ b {
       color: #fff;
       /* IE8 proofing */
       border-bottom: 2px solid transparent;
-      text-transform: uppercase;
-      vertical-align: bottom; }
+      text-transform: uppercase; }
       .navbar li a:hover, .navbar li a:focus {
         background-color: transparent;
         border-bottom-color: #a9a9a9;
@@ -5919,6 +5918,26 @@ b {
     border-bottom-color: #f9e830; }
   .navbar .navbar-toggle .icon-bar {
     background-color: #f9e830; }
+
+.navbar-brand {
+  padding: 0; }
+
+.navbar-date-logo .navbar-brand {
+  padding: 15px 15px;
+  font-size: 36px;
+  font-weight: 700; }
+  @media (min-width: 992px) {
+    .navbar-date-logo .navbar-brand {
+      font-size: 72px;
+      line-height: 72px;
+      float: left; } }
+
+.navbar-logo img {
+  height: 50px;
+  width: auto; }
+  @media (min-width: 768px) {
+    .navbar-logo img {
+      height: 250px; } }
 
 .ride-or-die span {
   font-weight: 700;

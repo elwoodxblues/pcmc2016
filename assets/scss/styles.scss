@@ -47,7 +47,6 @@ b {
       color: #fff; /* IE8 proofing */
       border-bottom: 2px solid transparent;
       text-transform: uppercase;
-      vertical-align: bottom;
 
       &:hover, &:focus {
         background-color: transparent;
@@ -77,6 +76,35 @@ b {
   .navbar-toggle {
     .icon-bar {
       background-color: $brand-primary;
+    }
+  }
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-date-logo {
+  .navbar-brand {
+    padding: 15px 15px;
+    font-size: 36px;
+    font-weight: 700;
+
+    @media(min-width: $screen-md-min) {
+      font-size: 72px;
+      line-height: 72px;
+      float: left;
+    }
+  }
+}
+
+.navbar-logo {
+  img {
+    height: 50px;
+    width: auto;
+
+    @media(min-width: $screen-sm-min) {
+      height: 250px;
     }
   }
 }

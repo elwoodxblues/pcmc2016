@@ -38,10 +38,10 @@
   font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $screen-sm-min) {
   .navbar {
     position: fixed;
-    top: 0;
+    top: 5%;
   }
   .mastfoot {
     position: fixed;
@@ -57,7 +57,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $screen-md-min) {
   .navbar,
   .mastfoot,
   .cover-container {
