@@ -44,12 +44,29 @@ b {
   }
 }
 
+.masthead-logo {
+  width: 80px;
+  float: left;
+
+  @media (min-width: $screen-xs-min) {
+    width: 120px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    width: 240px;
+  }
+}
+
 .masthead-nav {
+  @media (min-width: $screen-lg-min) {
+    margin-top: 30px;
+  }
+
   li {
-    line-height: 30px;
+    line-height: 36px;
     &.social {
       a {
-        // font-size: 30px;
+        font-size: 36px;
       }
     }
   }
@@ -69,10 +86,7 @@ b {
 
 .index {
   .logo {
-    width: 75%;
-    @media (min-width: $screen-md-min) {
-      width: 75%;
-    }
+    width: 65%;
   }
 }
 

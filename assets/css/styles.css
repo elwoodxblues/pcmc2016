@@ -5911,7 +5911,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 900px; } }
+    width: 1000px; } }
 
 html,
 body {
@@ -5940,8 +5940,24 @@ b {
   .masthead-brand a, .masthead-brand a:hover, .masthead-brand a:focus {
     text-decoration: none; }
 
+.masthead-logo {
+  width: 80px;
+  float: left; }
+  @media (min-width: 480px) {
+    .masthead-logo {
+      width: 120px; } }
+  @media (min-width: 768px) {
+    .masthead-logo {
+      width: 240px; } }
+
+@media (min-width: 1200px) {
+  .masthead-nav {
+    margin-top: 30px; } }
+
 .masthead-nav li {
-  line-height: 30px; }
+  line-height: 36px; }
+  .masthead-nav li.social a {
+    font-size: 36px; }
 
 .ride-or-die span {
   font-weight: 700;
@@ -5953,10 +5969,7 @@ b {
   text-align: left; }
 
 .index .logo {
-  width: 75%; }
-  @media (min-width: 992px) {
-    .index .logo {
-      width: 75%; } }
+  width: 65%; }
 
 .contact .wkr {
   margin-top: 50px; }
