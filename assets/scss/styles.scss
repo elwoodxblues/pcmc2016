@@ -1,9 +1,36 @@
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+
+$brand-primary: #f9e830;
+$component-active-color: $brand-primary;
+$font-family-sans-serif: 'Lato', sans-serif;
+
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "cover"; 
+
+html,
 body {
-  background-color: white;
+  height: 100%;
+  background-color: #333;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   background-image: url(../img/pcmc_foto.jpg);
+}
+
+b {
+  color: $brand-primary;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-weight: 400;
+}
+
+.contact {
+  .wkr {
+    margin-top: 50px;
+  }
+  .phone-numbers {
+    font-weight: 300;
+  }
 }

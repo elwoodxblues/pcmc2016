@@ -4,12 +4,14 @@
   "description": "PCMC 2016 site",
   "main": "index.js",
   "scripts": {
-    "sass": "./node_modules/node-sass/bin/node-sass assets/scss/styles.scss assets/css/styles.css --watch"
+    "sass": "./node_modules/node-sass/bin/node-sass assets/scss/styles.scss assets/css/styles.css --watch",
+    "jade": "jade templates/{index,contact}.jade -w -o ."
   },
   "author": "Marcin Gębala",
   "license": "ISC",
   "devDependencies": {
     "bootstrap-sass": "^3.3.5",
+    "font-awesome": "^4.6.3",
     "node-sass": "^3.8.0"
   }
 }

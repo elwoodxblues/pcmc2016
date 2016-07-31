@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title PCMC 2016
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1", crossorigin="anonymous")
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700', rel='stylesheet', type='text/css')
+    link(href='assets/css/styles.css', rel='stylesheet')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    .site-wrapper
+      .site-wrapper-inner
+        .cover-container
+          .masthead.clearfix
+            .inner
+              h3.masthead-brand
+                a(href='/') PCMC 2016
+              nav
+                ul.nav.masthead-nav
+                  li
+                    a(href='/program.html') Program
+                  li
+                    a(href='/sponsors.html') Sponsorzy
+                  li
+                    a(href='/contact.html') Kontakt
+                  li
+                    a(href='https://docs.google.com/forms/d/e/1FAIpQLSeTmyxTnhVSDkd5tZKrNv3K7-e4ZgGFfSX2_0V89VQrAE7fdA/viewform') Rejestracja
+                  li
+                    a(href='https://www.facebook.com/breslautragedia/')
+                      i.fa.fa-facebook
+                  li
+                    a(href='https://www.instagram.com/tragediabreslau/')
+                      i.fa.fa-instagram
+          .inner.cover
+            block content
