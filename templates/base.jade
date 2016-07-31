@@ -4,9 +4,15 @@ html(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title PCMC 2016
-    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1", crossorigin="anonymous")
-    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700', rel='stylesheet', type='text/css')
+    title Polish Cycle Messenger Championships Wrocław 2016
+    link(
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css",
+      rel="stylesheet",
+      integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1",
+      crossorigin="anonymous")
+    link(
+      href='https://fonts.googleapis.com/css?family=Lato:300,400,700',
+      rel='stylesheet', type='text/css')
     link(href='assets/css/styles.css', rel='stylesheet')
     // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     // WARNING: Respond.js doesn't work if you view the page via file://
@@ -17,30 +23,41 @@ html(lang='en')
     .site-wrapper
       .site-wrapper-inner
         .cover-container
-          .masthead.clearfix
-            .inner
-              block masthead-brand
-                a(href='/')
-                  img.masthead-logo(src="/assets/img/logo_white_pcmc.png")
-              nav
-                ul.nav.masthead-nav
-                  li
-                    a(href='/program.html') Program
-                  li
-                    a(href='/sponsors.html') Sponsorzy
-                  li
-                    a(href='/contact.html') Kontakt
-                  li
-                    a(href='https://docs.google.com/forms/d/e/1FAIpQLSeTmyxTnhVSDkd5tZKrNv3K7-e4ZgGFfSX2_0V89VQrAE7fdA/viewform', target="_blank") Rejestracja
-                  li.social
-                    a(href='https://www.facebook.com/breslautragedia/', target="_blank")
-                      i.fa.fa-facebook
-                  li.social
-                    a(href='https://www.instagram.com/tragediabreslau/', target="_blank")
-                      i.fa.fa-instagram
+          nav.navbar.navbar-custom(role='navigation')
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#top-menu-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              block navbar-brand
+                a.navbar-brand(href='/') 12-15.08
+            #top-menu-collapse.collapse.navbar-collapse
+              ul.nav.navbar-nav.navbar-right
+                li
+                  a(href='/program.html') Program
+                li
+                  a(href='/sponsors.html') Sponsorzy
+                li
+                  a(href='/contact.html') Kontakt
+                li
+                  a(href='https://docs.google.com/forms/d/e/1FAIpQLSeTmyxTnhVSDkd5tZKrNv3K7-e4ZgGFfSX2_0V89VQrAE7fdA/viewform', target="_blank") Rejestracja
+                li.social
+                  a(href='https://www.facebook.com/breslautragedia/', target="_blank")
+                    i.fa.fa-facebook
+                li.social
+                  a(href='https://www.instagram.com/tragediabreslau/', target="_blank")
+                    i.fa.fa-instagram
           .inner.cover
             block content
           .mastfoot
             .inner.ride-or-die
               span.pull-left Ride or
               span.pull-right Die.
+
+    script(
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+    script(
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa",
+      crossorigin="anonymous")
