@@ -26,6 +26,56 @@ b {
   font-weight: 400;
 }
 
+.masthead-brand {
+  font-weight: 700;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 56px;
+  }
+  
+  @media (min-width: $screen-md-min) {
+    font-size: 72px;
+  }
+
+  a {
+    &, &:hover, &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.masthead-nav {
+  li {
+    line-height: 30px;
+    &.social {
+      a {
+        // font-size: 30px;
+      }
+    }
+  }
+}
+
+.ride-or-die {
+  span {
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    border-bottom: 10px solid $brand-primary;
+    min-width: 90px;
+    text-align: left;
+  }
+}
+
+.index {
+  .logo {
+    width: 75%;
+    @media (min-width: $screen-md-min) {
+      width: 75%;
+    }
+  }
+}
+
 .contact {
   .wkr {
     margin-top: 50px;

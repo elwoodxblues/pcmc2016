@@ -5885,9 +5885,6 @@ body {
   .masthead-nav {
     float: right; } }
 
-/*
- * Cover
- */
 .cover {
   padding: 0 20px; }
 
@@ -5895,29 +5892,15 @@ body {
   padding: 10px 20px;
   font-weight: bold; }
 
-/*
- * Footer
- */
-.mastfoot {
-  color: #999;
-  /* IE8 proofing */
-  color: rgba(255, 255, 255, 0.5); }
-
-/*
- * Affix and center
- */
 @media (min-width: 768px) {
-  /* Pull out the header and footer */
   .masthead {
     position: fixed;
     top: 0; }
   .mastfoot {
     position: fixed;
-    bottom: 0; }
-  /* Start the vertical centering */
+    bottom: 10%; }
   .site-wrapper-inner {
     vertical-align: middle; }
-  /* Handle the widths */
   .masthead,
   .mastfoot,
   .cover-container {
@@ -5928,7 +5911,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px; } }
+    width: 900px; } }
 
 html,
 body {
@@ -5945,6 +5928,35 @@ b {
 
 .lead {
   font-weight: 400; }
+
+.masthead-brand {
+  font-weight: 700; }
+  @media (min-width: 768px) {
+    .masthead-brand {
+      font-size: 56px; } }
+  @media (min-width: 992px) {
+    .masthead-brand {
+      font-size: 72px; } }
+  .masthead-brand a, .masthead-brand a:hover, .masthead-brand a:focus {
+    text-decoration: none; }
+
+.masthead-nav li {
+  line-height: 30px; }
+
+.ride-or-die span {
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  border-bottom: 10px solid #f9e830;
+  min-width: 90px;
+  text-align: left; }
+
+.index .logo {
+  width: 75%; }
+  @media (min-width: 992px) {
+    .index .logo {
+      width: 75%; } }
 
 .contact .wkr {
   margin-top: 50px; }

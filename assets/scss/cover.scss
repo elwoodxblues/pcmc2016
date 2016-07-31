@@ -80,11 +80,6 @@ body {
   }
 }
 
-
-/*
- * Cover
- */
-
 .cover {
   padding: 0 20px;
 }
@@ -93,36 +88,18 @@ body {
   font-weight: bold;
 }
 
-
-/*
- * Footer
- */
-
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-}
-
-
-/*
- * Affix and center
- */
-
 @media (min-width: 768px) {
-  /* Pull out the header and footer */
   .masthead {
     position: fixed;
     top: 0;
   }
   .mastfoot {
     position: fixed;
-    bottom: 0;
+    bottom: 10%;
   }
-  /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
   }
-  /* Handle the widths */
   .masthead,
   .mastfoot,
   .cover-container {
@@ -134,6 +111,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 900px;
   }
 }
