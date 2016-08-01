@@ -9,7 +9,7 @@ $font-family-sans-serif: 'Lato', sans-serif;
 @mixin push-content {
   margin-bottom: 50px;
   @media(min-width: $screen-sm-min) {
-    margin-top: 170px;
+    margin-top: 20px;
   }
 }
 
@@ -115,6 +115,10 @@ b {
 }
 
 .navbar-logo {
+  .navbar-brand {
+    height: auto;
+  }
+
   img {
     height: 50px;
     width: auto;
