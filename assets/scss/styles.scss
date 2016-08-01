@@ -5,7 +5,6 @@ $component-active-color: $brand-primary;
 $font-family-sans-serif: 'Lato', sans-serif;
 
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "cover"; 
 
 @mixin push-content {
   margin-bottom: 50px;
@@ -21,10 +20,13 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url(../img/pcmc_foto.jpg);
+  background-image: url(../img/pcmc_foto_1920.jpg);
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 
 b {
@@ -43,6 +45,8 @@ b {
 }
 
 .navbar {
+
+  padding: 10px;
 
   li {
     display: inline-block;
@@ -75,6 +79,11 @@ b {
 
     @media (max-width: $screen-xs-max) {
       min-width: 48px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      width: 100%;
+      margin-top: 5%;
     }
   }
 
@@ -148,8 +157,6 @@ b {
 
 }
 
-
-
 .index {
   .logo {
     width: 65%;
@@ -164,11 +171,16 @@ b {
   }
   .phone-numbers {
     font-weight: 300;
+    a, a:hover, a:focus {
+      text-decoration: none;
+      color: white;
+    }
   }
 }
 
 .sponsors {
   @include push-content();
+  background-color: white;
 
   ul {
     li {
