@@ -1,12 +1,3 @@
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
 .site-wrapper {
   display: table;
   width: 100%;
@@ -40,13 +31,12 @@
 
 @media (min-width: $screen-sm-min) {
   .navbar {
-    position: fixed;
-    top: 5%;
+    margin-top: 5%;
   }
-  .mastfoot {
-    position: fixed;
-    bottom: 10%;
-  }
+  // .mastfoot {
+  //   position: fixed;
+  //   bottom: 10%;
+  // }
   .site-wrapper-inner {
     vertical-align: middle;
   }
@@ -57,10 +47,10 @@
   }
 }
 
-@media (min-width: $screen-md-min) {
-  .navbar,
-  .mastfoot,
-  .cover-container {
-    width: 1000px;
-  }
-}
+// @media (min-width: $screen-md-min) {
+//   .navbar,
+//   .mastfoot,
+//   .cover-container {
+//     width: 1000px;
+//   }
+// }

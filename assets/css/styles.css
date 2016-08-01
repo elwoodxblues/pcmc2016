@@ -5814,15 +5814,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none;
-  /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 1px solid #fff; }
-
 .site-wrapper {
   display: table;
   width: 100%;
@@ -5851,11 +5842,7 @@ button.close {
 
 @media (min-width: 768px) {
   .navbar {
-    position: fixed;
-    top: 5%; }
-  .mastfoot {
-    position: fixed;
-    bottom: 10%; }
+    margin-top: 5%; }
   .site-wrapper-inner {
     vertical-align: middle; }
   .navbar,
@@ -5863,12 +5850,6 @@ button.close {
   .cover-container {
     width: 100%;
     /* Must be percentage or pixels for horizontal alignment */ } }
-
-@media (min-width: 992px) {
-  .navbar,
-  .mastfoot,
-  .cover-container {
-    width: 1000px; } }
 
 html,
 body {
@@ -5886,38 +5867,42 @@ b {
   color: #f9e830;
   text-transform: uppercase; }
 
+@media (min-width: 992px) {
+  .container {
+    width: 900px; } }
+
 .lead {
   font-weight: 400; }
 
-.navbar {
-  padding: 30px; }
-  .navbar li {
-    display: inline-block; }
-    .navbar li + li {
-      margin-left: 20px; }
-    .navbar li a {
-      padding-right: 0;
-      padding-left: 0;
-      font-size: 16px;
-      font-weight: bold;
-      color: #fff;
-      /* IE8 proofing */
-      border-bottom: 2px solid transparent;
-      text-transform: uppercase; }
-      .navbar li a:hover, .navbar li a:focus {
-        background-color: transparent;
-        border-bottom-color: #a9a9a9;
-        border-bottom-color: rgba(255, 255, 255, 0.25); }
-    .navbar li.social a {
-      font-size: 36px; }
-    @media (max-width: 767px) {
-      .navbar li {
-        min-width: 48px; } }
-  .navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
-    color: #f9e830;
-    border-bottom-color: #f9e830; }
-  .navbar .navbar-toggle .icon-bar {
-    background-color: #f9e830; }
+.navbar li {
+  display: inline-block; }
+  .navbar li + li {
+    margin-left: 20px; }
+  .navbar li a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    /* IE8 proofing */
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase; }
+    .navbar li a:hover, .navbar li a:focus {
+      background-color: transparent;
+      border-bottom-color: #a9a9a9;
+      border-bottom-color: rgba(255, 255, 255, 0.25); }
+  .navbar li.social a {
+    font-size: 36px; }
+  @media (max-width: 767px) {
+    .navbar li {
+      min-width: 48px; } }
+
+.navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
+  color: #f9e830;
+  border-bottom-color: #f9e830; }
+
+.navbar .navbar-toggle .icon-bar {
+  background-color: #f9e830; }
 
 .navbar-brand {
   padding: 0; }
@@ -5939,22 +5924,46 @@ b {
     .navbar-logo img {
       height: 250px; } }
 
-.ride-or-die span {
-  font-weight: 700;
-  font-size: 24px;
-  padding-bottom: 5px;
-  text-transform: uppercase;
-  border-bottom: 10px solid #f9e830;
-  min-width: 90px;
-  text-align: left; }
+.ride-or-die {
+  margin-bottom: 30px; }
+  .ride-or-die span {
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    border-bottom: 10px solid #f9e830;
+    min-width: 90px;
+    text-align: left; }
+    @media (min-width: 768px) {
+      .ride-or-die span.left {
+        float: left !important; } }
+    @media (min-width: 768px) {
+      .ride-or-die span.right {
+        float: right !important; } }
 
-/* Index page */
 .index .logo {
   width: 65%; }
 
-/* Contact page */
-.contact .wkr {
-  margin-top: 50px; }
+.contact {
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .contact {
+      margin-top: 170px; } }
+  .contact .wkr {
+    margin-top: 50px; }
+  .contact .phone-numbers {
+    font-weight: 300; }
 
-.contact .phone-numbers {
-  font-weight: 300; }
+.sponsors {
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .sponsors {
+      margin-top: 170px; } }
+  .sponsors ul li {
+    display: inline-block; }
+
+.program {
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .program {
+      margin-top: 170px; } }
