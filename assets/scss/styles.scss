@@ -6,6 +6,11 @@ $font-family-sans-serif: 'Lato', sans-serif;
 
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+@font-face {
+  font-family: 'BebasNeue';
+  src:  url('BebasNeue.woff2') format('woff2')
+}
+
 @mixin push-content {
   margin-bottom: 50px;
   @media(min-width: $screen-sm-min) {
@@ -107,6 +112,7 @@ b {
 
 .navbar-date-logo {
   .navbar-brand {
+    font-family: 'Bebas Neue', sans-serif;
     padding: 15px 15px;
     font-size: 36px;
     font-weight: 700;
