@@ -3,19 +3,20 @@ extends ./base.jade
 block content
   -
     var sponsors = {
-     'WKR': {imgPath: 'assets/img/wkr.jpg', url: '/'},
-     'RowerLover': {imgPath: 'assets/img/rowerlover.jpg', url: '/'},
-     'Brysch': {imgPath: 'assets/img/brysch.jpg', url: '/'},
-     'KajakCustom': {imgPath: 'assets/img/kajak.jpg', url: '/'},
-     'Blahol': {imgPath: 'assets/img/blahol.jpg', url: '/'},
-     '24box': {imgPath: 'assets/img/24box.jpg', url: '/'},
-     'PanPablo': {imgPath: 'assets/img/panpablo.jpg', url: '/'},
-     'KinoNH': {imgPath: 'assets/img/kino_nh.jpg', url: '/'},
-     'SexAndPedal': {imgPath: 'assets/img/sex&pedal.jpg', url: '/'}
+     'WKR': {imgPath: 'assets/img/wkr.jpg', url: 'http://kurierzyrowerowi.wroclaw.pl/'},
+     'RowerLover': {imgPath: 'assets/img/rowerlover.jpg', url: 'https://www.facebook.com/rowerlover/'},
+     'Brysch': {imgPath: 'assets/img/brysch.jpg', url: 'https://www.facebook.com/bryschrecycling/'},
+     'KajakCustom': {imgPath: 'assets/img/kajak.jpg', url: 'http://www.kajakcustom.com/'},
+     'Blahol': {imgPath: 'assets/img/blahol.jpg', url: 'http://blahol.pl/'},
+     '24box': {imgPath: 'assets/img/24box.jpg', url: 'https://www.24box.pl/'},
+     'PanPablo': {imgPath: 'assets/img/panpablo.jpg', url: 'http://www.panpablo.pl/'},
+     'KinoNH': {imgPath: 'assets/img/kino_nh.jpg', url: 'http://www.kinonh.pl/'},
+     'SexAndPedal': {imgPath: 'assets/img/sex&pedal.jpg', url: 'http://www.sexandpedal.com/'}
     };
 
   .sponsors
     ul.list-unstyled
       each data, name in sponsors
         li
-          img(src=data.imgPath)
+          a(href=data.url, target="_blank")
+            img(src=data.imgPath)
