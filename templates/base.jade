@@ -1,5 +1,17 @@
 doctype html
 html(lang='en')
+
+  mixin menuLink(name, href)
+    if name == active
+      li.active
+        a(href=href)= name
+    else
+      li
+        a(href=href)= name
+
+  block active-page
+    - var active = ''
+  
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -34,12 +46,9 @@ html(lang='en')
                 img(src='assets/img/logo_white_pcmc.png')
         #top-menu-collapse.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
-            li
-              a(href='/program.html') Program
-            li
-              a(href='/sponsors.html') Sponsorzy
-            li
-              a(href='/contact.html') Kontakt
+            +menuLink('Program', '/program.html')
+            +menuLink('Sponsorzy', '/sponsors.html')
+            +menuLink('Kontakt', '/contact.html')
             li
               a(href='https://docs.google.com/forms/d/e/1FAIpQLSeTmyxTnhVSDkd5tZKrNv3K7-e4ZgGFfSX2_0V89VQrAE7fdA/viewform', target="_blank") Rejestracja
             li.social
