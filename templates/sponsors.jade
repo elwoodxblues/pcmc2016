@@ -1,20 +1,33 @@
 extends ./base.jade
 
+block title
+  title Sponsorzy - Polish Cycle Messenger Championships Wrocław 2016
+
 block active-page
   - var active = 'Sponsorzy'
 
 block content
   -
     var sponsors = {
-     'WKR': {imgPath: 'assets/img/wkr.jpg', url: 'http://kurierzyrowerowi.wroclaw.pl/'},
+     'Wrocławscy Kurierzy Rowerowi': {imgPath: 'assets/img/wkr.jpg', url: 'http://kurierzyrowerowi.wroclaw.pl/'},
      'RowerLover': {imgPath: 'assets/img/rowerlover.jpg', url: 'https://www.facebook.com/rowerlover/'},
      'Brysch': {imgPath: 'assets/img/brysch.jpg', url: 'https://www.facebook.com/bryschrecycling/'},
-     'KajakCustom': {imgPath: 'assets/img/kajak.jpg', url: 'http://www.kajakcustom.com/'},
+     'Kajak Custom': {imgPath: 'assets/img/kajak.jpg', url: 'http://www.kajakcustom.com/'},
      'Blahol': {imgPath: 'assets/img/blahol.jpg', url: 'http://blahol.pl/'},
      '24box': {imgPath: 'assets/img/24box.jpg', url: 'https://www.24box.pl/'},
-     'PanPablo': {imgPath: 'assets/img/panpablo.jpg', url: 'http://www.panpablo.pl/'},
-     'KinoNH': {imgPath: 'assets/img/kino_nh.jpg', url: 'http://www.kinonh.pl/'},
-     'SexAndPedal': {imgPath: 'assets/img/sex&pedal.jpg', url: 'http://www.sexandpedal.com/'}
+     'Pan Pablo': {imgPath: 'assets/img/panpablo.jpg', url: 'http://www.panpablo.pl/'},
+     'Kino Nowe Horyzonty': {imgPath: 'assets/img/kino_nh.jpg', url: 'http://www.kinonh.pl/'},
+     'Sex And Pedal': {imgPath: 'assets/img/sex&pedal.jpg', url: 'http://www.sexandpedal.com/'},
+     '24box': {imgPath: 'assets/img/24box.jpg', url: 'https://www.24box.pl/'},
+     'Abus': {imgPath: 'assets/img/abus.jpg', url: 'https://www.abus.com/pl'},
+     'Akondlab': {imgPath: 'assets/img/akondlab.jpg', url: 'http://www.akond.com/'},
+     'Bananamama': {imgPath: 'assets/img/banana.jpg', url: 'https://www.facebook.com/bananamama.boom/'},
+     'Kopalnia Reklam': {imgPath: 'assets/img/kopalniareklam.jpg', url: ''},
+     'Pan od rowerów': {imgPath: 'assets/img/panodrowerow.jpg', url: 'https://www.facebook.com/Pan-od-rowerów-183918191718017/'},
+     'Peleton': {imgPath: 'assets/img/peleton.jpg', url: 'http://pantuniestal.com'},
+     'Positive Day': {imgPath: 'assets/img/positiveday.jpg', url: 'https://www.facebook.com/Positive-Day-1509918452595771/'},
+     'Usługi Rowerowe': {imgPath: 'assets/img/u.rowerowe.jpg', url: 'https://www.facebook.com/uslugirowerowe/'},
+     'Wagenburg': {imgPath: 'assets/img/wagenburg.jpg', url: 'https://www.facebook.com/wagenburg/'}
     };
 
   .sponsors
@@ -22,4 +35,4 @@ block content
       each data, name in sponsors
         li
           a(href=data.url, target="_blank")
-            img(src=data.imgPath)
+            img(src=data.imgPath, alt=name)
